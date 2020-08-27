@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.SplashScreen"
+    android:background="?attr/colorPrimary">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <LinearLayout
+            android:id="@+id/bulb_container"
+            android:layout_width="@dimen/_170sdp"
+            android:layout_height="@dimen/_170sdp"
+            android:orientation="horizontal"
+            android:background="@drawable/custom_bg_main_logo"
+            android:elevation="@dimen/_8sdp"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/_20sdp">
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/lottie_anim_view"
+            android:layout_width="@dimen/_150sdp"
+            android:layout_height="@dimen/_150sdp"
+            app:lottie_loop="true"
+            android:scaleType="centerInside"
+            app:lottie_autoPlay="true"
+            app:lottie_rawRes="@raw/bulb_white"
+            android:layout_marginTop="@dimen/_5sdp"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/ubuntu_medium"
+            android:text="@string/heading_text"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/_30ssp"
+            android:elevation="@dimen/_10sdp"
+            android:shadowColor="@color/grey800"
+            android:shadowDx="7"
+            android:shadowDy="7"
+            android:shadowRadius="1.5"
+            android:layout_marginTop="@dimen/_50sdp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/ubuntu"
+            android:text="@string/sub_heading_text"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/_13ssp"
+            android:layout_marginTop="@dimen/_10sdp"/>
+
+        <Button
+            android:layout_width="@dimen/_150sdp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/custom_btn_bg_explore"
+            android:text="@string/btn_explore_text"
+            android:textSize="@dimen/_12ssp"
+            android:layout_marginTop="@dimen/_50sdp"
+            android:fontFamily="@font/ubuntu_medium"
+            android:textColor="@color/teal800"
+            android:onClick="exploreApp"
+            android:foreground="@drawable/ripple_effect_button"/>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

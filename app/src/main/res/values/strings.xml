@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">LifeHacks</string>
+    <string name="heading_text">Life Hacks</string>
+    <string name="sub_heading_text">Best tips for Smart Lifestyle</string>
+    <string name="btn_explore_text">Explore</string>
+    <string name="transition_image">transitionImage</string>
+</resources>
