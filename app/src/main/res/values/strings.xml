@@ -4,4 +4,6 @@
     <string name="sub_heading_text">Best tips for Smart Lifestyle</string>
     <string name="btn_explore_text">Explore</string>
     <string name="transition_image">transitionImage</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

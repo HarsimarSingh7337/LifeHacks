@@ -12,7 +12,7 @@ import androidx.core.app.ActivityOptionsCompat;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.learning.lifehacks.R;
-import com.learning.lifehacks.TopicDescription;
+import com.learning.lifehacks.activities.TopicDescription;
 import com.learning.lifehacks.models.TopicClassPojo;
 import com.learning.lifehacks.viewholders.TopicViewHolder;
 

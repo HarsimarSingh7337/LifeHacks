@@ -7,7 +7,6 @@ import androidx.core.content.res.ResourcesCompat;
 
 import com.learning.lifehacks.R;
 import com.learning.lifehacks.models.TopicClassPojo;
-import com.learning.lifehacks.models.Topic_Description_POJO;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -15,7 +14,6 @@ import java.util.List;
 public class DataStore {
 
     private List<TopicClassPojo> topicList = new ArrayList<>();
-    private List<Topic_Description_POJO> menClothingList = new ArrayList<>();
     private Context c;
 
     public DataStore(Context c){
@@ -46,8 +44,6 @@ public class DataStore {
 
         String[] topicImgPath = new String[]{"clothes_menn","clothes_women","clothes_kids","cooking","education","love","husband","wife","boyfriend","girlfriend","food","business","travel","driving","beauty"};
 
-
-
         for (int i=0; i<topicName.length; i++){
 
             TopicClassPojo topicClassPojo = new TopicClassPojo();
@@ -57,18 +53,12 @@ public class DataStore {
             topicClassPojo.setImagePath(topicImgPath[i]);
 
             topicList.add(i,topicClassPojo);
-            topicClassPojo = null;
         }
     }
 
     public List<TopicClassPojo> getTopicList(){
-
         prepareTopicList();
         return topicList;
     }
 
-    public List<Topic_Description_POJO> getMenClothingList() {
-
-        return menClothingList;
-    }
 }
